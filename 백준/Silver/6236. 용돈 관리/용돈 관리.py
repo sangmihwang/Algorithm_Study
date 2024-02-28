@@ -20,7 +20,6 @@ ans = 0
 while start <= end:
     mid = (start + end) // 2
     if sol(mid) > M:        
-        
         start = mid + 1
     else:
         ans = mid
