@@ -5,8 +5,8 @@ N, M = map(int, input().split())
 arr = []
 for _ in range(N):
     arr.append(int(input()))
-dp1 = [[-float('inf') for _ in range(M + 1)] for _ in range(N)]
-dp2 = [[-float('inf') for _ in range(M + 1)] for _ in range(N)]
+dp1 = [[-3276800 for _ in range(M + 1)] for _ in range(N)]
+dp2 = [[-3276800 for _ in range(M + 1)] for _ in range(N)]
 dp1[0][0] = 0       # dp1[i][j] : i번째 수를 포함하지 않는 j개 구간합 중 최댓값
 dp2[0][1] = arr[0]  # dp2[i][j] : i번째 수를 포함하는 j개 구간합 중 최댓값
 
