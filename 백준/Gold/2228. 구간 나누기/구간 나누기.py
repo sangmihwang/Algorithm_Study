@@ -12,7 +12,7 @@ dp2[0][1] = arr[0]  # dp2[i][j] : i번째 수를 포함하는 j개 구간합 중
 
 for i in range(1, N):
     dp1[i][0] = 0
-    for j in range(1, min(M, (i + 2) // 2) + 1):
+    for j in range(1, M + 1):
         dp1[i][j] = max(dp1[i-1][j], dp2[i-1][j])
         dp2[i][j] = max(dp1[i-1][j-1] + arr[i], dp2[i-1][j] + arr[i])
 
